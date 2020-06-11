@@ -1,0 +1,5 @@
+﻿		** Alterações do dia 30/11/2015 **
+* Relatório individual(diário|mensal|anual) com informações de média e meta da equipe.
+* Relatórios com opção de exportar para planilha no formato CSV.
+* Relatório de ranking com meta e coeficiente.
+

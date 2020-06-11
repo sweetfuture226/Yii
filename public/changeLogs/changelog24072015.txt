@@ -1,0 +1,3 @@
+﻿		** Alterações do dia 24/07/2015 **
+1. Relatório com ranking dos contratos mais produtivos no mês no dashboard.
+

@@ -1,0 +1,69 @@
+/**
+ *
+ * Apply Here your Custom CSS
+ *
+*/
+
+body {
+	
+}
+
+.btn-margin-grid {
+    margin: 1%;
+}
+
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+#loader_image {
+    display:    none;
+    position:   fixed;
+    z-index:    2000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+    url('../../img/loaders/loader8.gif')
+    50% 50%
+    no-repeat;
+}
+
+div.loading {
+    background: rgba(255, 255, 255, .8) url('../../img/loaders/loader8.gif') 50% 50% no-repeat;
+    opacity: 1;
+}
+
+div.loading * {
+    opacity: .8;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading #loader_image {
+    display: block;
+}
+
+body.loading.not_show_loading #loader_image{
+    display: none !important;
+}
+
+input.spinner[type="text"], input.spinner[type="password"], input.spinner[type="datetime"], input.spinner[type="datetime-local"], input.spinner[type="date"], input.spinner[type="month"], input.spinner[type="time"], input.spinner[type="week"], input.spinner[type="number"], input.spinner[type="email"], input.spinner[type="url"], input.spinner[type="search"], input.spinner[type="tel"], input.spinner[type="color"] {
+    background: url("../../img/aguarde_g.gif") right/114px 38px no-repeat !important;
+}
+
+.anchorHelp {
+    display: block;
+    height: 60px; /*same height as header*/
+    margin-top: -60px; /*same height as header*/
+    visibility: hidden;
+}

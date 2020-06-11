@@ -1,0 +1,120 @@
+.breadcrumbs a{
+    color: gray;
+}
+
+span.required{
+    color: red;
+}
+
+.select_chzn, .file_input, .cep_input{
+    margin-top: 40px !important;
+}
+
+div.buttons{
+    margin: 20px 0 -36px 20px;
+    float: left;
+    width: 100%;
+}
+
+div.buttons_template{
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+
+.button_new{
+    padding-left: 10px;
+}
+
+.note, .errorSummary{
+    padding: 0px 5px 0px 15px;
+}
+
+.errorSummary p{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.errorSummary ul{
+    color: red;
+}
+
+input.error, select.error + div{
+    border: 1px solid red !important;
+}
+
+.search-form .chzn-container, .search-form .chzn-drop{
+    width: 99.5% !important;
+}
+
+.search-form .chzn-search input{
+    width: 90% !important;
+}
+
+.mainForm input[type="checkbox"]{
+    float: left;
+    margin-top: 7px;
+}
+
+.invisible{
+    display: none;
+}
+
+.tab_container {
+    overflow: inherit !important;
+}
+
+tr.destacada{
+    color: red;
+}
+
+table.detail-view tr.odd {
+    background: #EAEAEA !important;
+}
+
+table.detail-view .null {
+    color: gray !important;
+}
+
+link.boxy-content{
+    display: none !important;
+}
+
+table.detail-view th {
+    width: auto !important;
+}
+
+.searchSmall { background: url(../img/searchSmall.png) no-repeat; background-position:center ; border: 1px solid #E3E3E3; height: 30px; width: 35px; float: left; margin-left: 3px;}
+.searchSmall:hover { background-position: 0 -25px; height: 30px }
+.searchSmall:active {background-color: #E1E1E1; height: 30px}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/loaders/loader8.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}

@@ -1,0 +1,8 @@
+protected/config/db.php
+/assets/
+!assets/.gitignore
+protected/runtime/
+.idea
+workspace.xml
+!protected/runtime/.gitignore
+/public/backupRelatorios/

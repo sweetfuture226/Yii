@@ -1,0 +1,53 @@
+input.remover_item{
+    width: 15px !important;
+    height: 15px;
+    background: transparent center center url("../images/icons/close_small.png") no-repeat;
+    border: none;
+    display: inline;
+}
+
+div.ambiente_selecionado_projeto{
+    /*height: 23px;*/
+    width: 30%;
+    background: #fff;
+    border: 1px #999 solid;
+    float: left;
+    padding: 5px;
+    vertical-align: center;
+}
+
+div.ambiente_selecionado_projeto *{
+    height: 15px;
+    font-size: 15px;
+}
+
+div.ambiente_selecionado_projeto input{
+    float: left;
+    vertical-align: middle;
+    clear:none;
+}
+
+div.ambiente_selecionado_projeto input.nome_personalizado{
+    width: 80%;
+    height: 30px; 
+}
+
+div.ambiente_selecionado_projeto input.remover_item{
+    height: 25px;
+}
+
+div#ambientes_selecionados{
+    width: 100%;
+    background: #fff;
+    border: 1px #999 solid;
+    padding: 0;
+}
+
+div.ambientes_container{
+    width: 730px;
+    float: left;
+}
+
+.addProduto { background: url(../images/icons/add_2.png) no-repeat; background-position: center 0 ; border: 1px solid #E3E3E3; height: 25px}
+.addProduto:hover { background-position: center -23px; height: 25px }
+.addProduto:active {background-color: #E1E1E1; height: 25px}

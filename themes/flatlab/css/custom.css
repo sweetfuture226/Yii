@@ -1,0 +1,219 @@
+@import "chosen.css";
+@import "boxy.css";
+@import "smart_wizard.css";
+@import "MyThumbnail.css";
+@import "cotacao.css";
+@import "projeto.css";
+
+span.required{
+    color: red;
+}
+
+/*.select_chzn, */.file_input, .cep_input{
+    margin-top: 29px !important;
+}
+
+div.buttons{
+    margin-top: 25px;
+    float: left;
+    width: 100%;
+}
+
+div.buttons_template{
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+
+.button_new{
+    padding-left: 10px;
+}
+
+.note, .errorSummary{
+    padding: 0px 5px 0px 15px;
+}
+
+.errorSummary p{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.errorSummary ul{
+    color: red;
+}
+
+input.error, select.error + div{
+    border: 1px solid red !important;
+}
+
+.search-form .chzn-container, .search-form .chzn-drop{
+    width: 100% !important;
+    margin-bottom: 6px;
+}
+
+.search-form .chzn-search input{
+    width: 100% !important;
+}
+
+.chzn-container, .chzn-drop{
+    width: 100% !important;
+    margin-bottom: 6px;
+}
+
+.chzn-search input{
+    width: 100% !important;
+}
+
+.invisible{
+    display: none;
+}
+
+tr.destacada{
+    color: red;
+}
+
+table.detail-view tr.odd {
+    background: #EAEAEA !important;
+}
+
+table.detail-view .null {
+    color: gray !important;
+}
+
+link.boxy-content{
+    display: none !important;
+}
+
+table.detail-view th {
+    width: auto !important;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+#loader_image {
+    display:    none;
+    position:   fixed;
+    z-index:    2000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../images/loaders/loader8.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+div.loading {
+    background: rgba(255, 255, 255, .8) url('../images/loaders/loader8.gif') 50% 50% no-repeat;
+    opacity: 1;
+}
+
+div.loading * {
+    opacity: .8;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading #loader_image {
+    display: block;
+}
+
+body.loading.not_show_loading #loader_image{
+    display: none !important;
+}
+
+/*Projeto Wizard*/
+.projeto .produto_quantidade {
+    width: 85px;
+}
+
+
+fieldset[class^="movimentacao_fieldset_"]{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+fieldset[class^="movimentacao_fieldset_"] > #legenda{
+    text-align: center
+}
+
+fieldset[class^="movimentacao_fieldset_"] > legend{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    
+    padding: 5px 10px;
+    line-height: 16px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    border: 1px solid white;
+
+    margin-left: 10px;
+    
+    text-align: left;
+    color: #000;
+    background: #fff;
+}
+
+fieldset{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+fieldset > fieldset{
+    margin: 10px;
+}
+
+fieldset > #legenda{
+    text-align: center
+}
+
+fieldset > legend{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    
+    padding: 5px 10px;
+    line-height: 16px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    border: 1px solid white;
+
+    margin-left: 10px;
+    
+    text-align: left;
+    color: #000;
+    background: #fff;
+    
+    width: auto !important;
+    font-size: 16px;
+}
+
+.searchSmall { background: url(../images/searchSmall.png) no-repeat; background-position:center ; border: 1px solid #E3E3E3; height: 24px}
+.searchSmall:hover { background-position: 0 -25px; height: 24px }
+.searchSmall:active {background-color: #E1E1E1; height: 24px}
+
+.pager .previous>a, .pager .previous>span, .pager .next>a, .pager .next>span {
+    float: none;
+}
+
+div.buttons-search{
+    float: left;
+    padding-left: 15px;
+    width: 100%;
+    margin-bottom: -35px;
+}
+
+.chzn-single {
+    height: 28px !important;
+}

@@ -1,0 +1,4 @@
+﻿		** Alterações do dia 02/06/2015 **
+1. O novo Relatório de produtividade por equipe possui uma linha que representa a meta de produtividade a ser alcançada por cada setor. A meta padrão é 60%, mas é possível alterar no cadastro localizado no menu Configurações, opção Equipe.
+2. Correções de bugs.
+

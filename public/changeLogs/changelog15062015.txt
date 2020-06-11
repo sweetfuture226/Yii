@@ -1,0 +1,4 @@
+﻿		** Alterações do dia 15/06/2015 **
+1. Guia do Usuário
+2. Correções de bugs.
+

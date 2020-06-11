@@ -1,0 +1,38 @@
+.cotacao_image {
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.cotacao_item {
+    display: block;
+    float: left;
+    width: 160px;
+    height: 70px;
+    margin: 0;
+}
+
+.cotacao_radio{
+    display: none;
+    float: left;
+    height: 20px;
+    padding: 95px 0;
+}
+
+.cotacao_produto{
+    border-radius:7px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+}
+
+.produto_selecionado{
+    background-color: #ddd;
+}
+
+.produto.produto_hover{
+    background-color: #eee !important;
+}
+
+.produto{
+    cursor: pointer;
+}

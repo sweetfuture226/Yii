@@ -1,0 +1,5 @@
+﻿1. Cadastrar individualmente a hora de entrada e hora de saída do colaborador.
+2. Melhoria no método de inserção manual da LDP no cadastro do contrato.
+3. Vinculação automática de produtividade para novos contratos.
+4. Relatório de contratos finalizados.
+5. Relatório comparativo de colaboradores.

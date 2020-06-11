@@ -1,0 +1,4 @@
+﻿		** Alterações do dia 18/05/2015 **
+1. Relatório de sites blacklist, com a possibilidade de incluir novos sites como autorizado.
+2. Produtividade das atividades externas contabilizadas no relatório individual.
+

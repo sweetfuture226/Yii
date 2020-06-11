@@ -1,0 +1,18 @@
+﻿		** Novas funcionalidades **
+		
+Você já otimizou processos com o Viva Smith?
+
+Através da Gestão de Métricas, você pode definir critérios a partir de telas e subtelas dos sistemas da sua empresa e acompanhar de forma automática os resultados dos colaboradores.
+
+Vejamos um exemplo prático: sua empresa faz uso de um Sistema de Gestão Financeira e você deseja avaliar a quantidade de notas fiscais geradas por colaborador, por dia, a fim de 
+gerar uma meta para a equipe Financeiro. Para isso, basta entrar no Smith, definir o critério a partir das telas que compõem essa ação (ex: Inserir Nota), e definir a meta desejada (ex: 30 por dia).
+
+Da mesma forma, o processo se aplicará para qualquer outra área, como Administrativo, Recursos Humanos, Marketing, Jurídico, Tecnologia, etc.
+
+As métricas geradas permitem avaliação de critérios como responsabilidade (compromisso com o bom desempenho das tarefas atribuídas) e produtividade (agilidade e eficiência na execução das atividades).
+
+Para acessar o módulo de métricas, basta clicar na opção Métricas no menu esquerdo do Viva Smith.
+
+Em caso de dúvidas, consulte o manual através do link 
+https://vivasmith.com/help/ModuloMetricas
+ou entre em contato conosco

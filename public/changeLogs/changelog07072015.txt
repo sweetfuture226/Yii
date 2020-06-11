@@ -1,0 +1,5 @@
+﻿		** Alterações do dia 07/07/2015 **
+1. Relatório individual possibilitando pesquisa diária, mensal ou anual.
+2. Possibilidade de alterar limite do tempo ocioso permitido.
+3. Calendário de feriados
+4. Cadastro de férias dos colaboradores em seu perfil

@@ -1,0 +1,81 @@
+DOCUMENTAÇÃO DA API DO VIVA SMITH
+
+1. Descrição: Aplicação que permite acesso aos resultados dos relatórios existentes no sistema.
+
+2. Modos de uso:
+    2.1 Chamada direta:
+        2.1.1 Utilizar um protocolo de transferência de dados via POST.
+            Ex.1: Utilizando curl pela linha de comando:
+                curl --data "action=produtividadeEquipeMes&serial=A7DC-4E4S-XAF0-HI6M&dataInicio=2016-03-01&dataFim=2016-03-14" https://vivasmith.com/api/execute/
+
+            Ex.2: Utilizando ajax com jquery:
+                $.ajax({
+                    url: 'https://vivasmith.com/api/execute/',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {'action': 'produtividadeEquipeMes', 'serial': 'A7DC-4E4S-XAF0-HI6M', 'dataInicio': '2016-03-01', 'dataFim': '2016-03-14'},
+                })
+                .done(function(data) {
+                    console.log(data);
+                })
+                .fail(function(data) {
+                    console.log(data);
+                });
+
+    2.2 Biblioteca em PHP:
+        2.2.1 Copiar a biblioteca para o sistema que chamará a API.
+
+        2.2.2 Importar o arquivo que contém a classe da API para o arquivo que a executará.
+            Ex: require_once('vendors/smithApi/smithApi.php');
+
+        2.2.3 Instanciar um novo objeto e chamar uma função, enviando os dados como parâmetro.
+            Ex: $output = new SmithApi();
+                $teste = $output->produtividadeEquipeMes('A7DC-4E4S-XAF0-HI6M', '2016-03-01', '2016-03-14');
+
+3. Variáveis e Funções:
+    3.1 Variáveis:
+        3.1.1 (string) action: Nome da função que será executada no sistema da API.
+
+        3.1.2 (string) serial: Serial da empresa cadastrada no sistema do Viva Smith, que servirá de autenticação para a API.
+
+        3.1.3 (string) data: Data única para funções que tenha a data inicial pré definida.
+
+        3.1.4 (string) dataInicio: Data inicial para funções que aceitam períodos variáves.
+
+        3.1.5 (string) dataFim: Data final para funções que aceitam períodos variáves.
+
+        3.1.6 (string) tipo: Filtro para captura de dados da função 'produtividadeColaborador'. Pode ser 'dia', 'mes' ou 'ano'.
+
+    3.2 Funções:
+        3.2.1 Produtividade por Equipes
+            Ex: produtividadeEquipeMes($serial, $dataInicio, $dataFim)
+
+        3.2.2 Produtividade por Colaboradores
+            Ex: produtividadeColaborador($serial, $data, $tipo) - OBS: $tipo pode ser 'dia', 'mes' ou 'ano'
+
+        3.2.3 Produtividade x Custo
+            Ex: produtividadeCusto($serial, $dataInicio, $dataFim)
+
+        3.2.4 Produtividade em hora extra
+            Ex: produtividadeHoraExtra($serial, $dataInicio, $dataFim)
+
+        3.2.5 Entrada e saída de colaboradores
+            Ex: produtividadePonto($serial, $dataInicio, $dataFim)
+
+        3.2.6 Produtividade em programas e sites
+            Ex: programasSitesColaborador($serial, $data)
+
+        3.2.7 Produtividade de todos os colaboradores de cada contrato
+            Ex: contratosIndividual($serial, $data)
+
+        3.2.8 Produtividade geral nos contratos
+            Ex: contratosGeral($serial, $dataInicio, $dataFim)
+
+        3.2.9 Produtividade de cada colaborador nos contratos associados
+            Ex: contratosProdutividade($serial, $dataInicio, $dataFim)
+
+        3.2.10 Consumo de energia dos contratos
+            Ex: contratosConsumo($serial, $dataInicio, $dataFim)
+
+        3.2.11 Participação dos colaboradores nas métricas
+            Ex: metricas($serial, $dataInicio, $dataFim)
